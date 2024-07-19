@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         videoView.setMediaController(mediaController);
 
         //设置视频路径
-        String videoPath = "android.resource://" + getPackageName() + "/"+R.raw.saye;
+        String videoPath = "android.resource://" + getPackageName() + "/"+R.raw.anime;
         videoView.setVideoURI(Uri.parse(videoPath));
 
         //准备视频
