@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         //准备视频
         videoView.setOnPreparedListener(mediaPlayer -> {
             mediaPlayer.setLooping(true);//设置循环播放
+            mediaPlayer.setVideoScalingMode(android.media.MediaPlayer.VIDEO_SCALING_MODE_SCALE_TO_FIT_WITH_CROPPING);
         });
 
         videoView.start();//开始播放
